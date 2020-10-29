@@ -28,8 +28,8 @@
   // load GeoJSON from an external file
   $.getJSON("rodents.geojson",function(data){
     var ratIcon = L.icon({
-      iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',
-      iconSize: [60,50]
+      iconUrl: 'http://maptimeboston.github.io/leaflet-intro/rat.png',
+      iconSize: [50,40]
     });
     L.geoJson(data,{
       pointToLayer: function(feature,latlng){
