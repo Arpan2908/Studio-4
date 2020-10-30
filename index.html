@@ -31,11 +31,10 @@
  
   // load GeoJSON from an external file
   $.getJSON("rodents.geojson",function(data){
-    var locations = data.features.map(function(rat) {
-    var location = rat.geometry.coordinates.reverse();
-    location.push(0.5);
-    return location;
-  });
+      var ratIcon = L.icon({
+      iconUrl: 'http://andywoodruff.com/maptime-leaflet/rat.png',
+      iconSize: [50,40]
+    });
 
   var heat = L.heatLayer(locations, { radius: 35 });
   map.addLayer(heat); 
