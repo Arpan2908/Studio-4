@@ -72,7 +72,7 @@ $.getJSON("rodents.geojson",function(data){
       return marker;
     }
   }).addTo(map);
-    var clusters = L.markerClusterGroup();
+   var clusters = L.markerClusterGroup();
 clusters.addLayer(rodents);
 map.addLayer(clusters); 
 });
