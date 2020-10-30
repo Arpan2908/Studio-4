@@ -36,10 +36,7 @@
       iconSize: [50,40]
     });
  });
-
-  var heat = L.heatLayer(locations, { radius: 35 });
-  map.addLayer(heat); 
-    });
+    
     L.geoJson(data,{
       pointToLayer: function(feature,latlng){
         var marker = L.marker(latlng,{icon: ratIcon});
